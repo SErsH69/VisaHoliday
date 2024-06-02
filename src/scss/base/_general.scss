@@ -1,0 +1,103 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Akrobat", sans-serif;
+    --main-div-bg-gray: #D7D9DA;
+    --text-body-dark: #323232;
+    --text-body-green: #008347;
+    --color-grayscale-400: #EAEAEA;
+    --main-menu-item-default: #323232;
+    --button-primary-label-default: #fff;
+    --button-primary-bg-default: #008347;
+    --button-primary-bg-hover: #009D55;
+    --button-primary-bg-active: #008347;
+    --main-div-bg-white: #fff;
+    --text-hr-gray: #EAEAEA;
+    --text-body-gray: #838B8E;
+    --main-div-bg-green-gray: #CBDAD3;
+    --field-label-hover: #CDD3D7;
+    --navigation-tag-country-border-default: #CDD3D7;
+    --button-link-label-default: #008347;
+    --main-div-bg-green: #008347;
+    --text-body-white: #fff;
+}
+body {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    font-family: var(--font-family);
+    outline: none;
+    scroll-behavior: smooth;
+    transition: all .3s ease;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-grayscale-400);
+    height: auto;
+}
+.ovh {
+    overflow: hidden;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+.content {
+    z-index: 2;
+    flex: 1;
+    position: relative;
+}
+.footer {
+    flex: 0 0 auto;
+}
+.center_block {
+    max-width: vw(1224);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: vw(44);
+    padding-right: vw(44);
+    @media all and (max-width: 1024px) {
+        max-width: 1224px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+    @media all and (max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+textarea {
+    resize: none;
+}
+// scrollbar
+/* width */
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+/* Track */
+*::-webkit-scrollbar-track {
+    background: #E4E4E4;
+    border-radius: 10px 0px 0px 10px;
+}
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: #008347;
+    border-radius: 10px;
+}
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+    background: #008347;
+}
+// scrollbar end

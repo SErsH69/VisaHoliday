@@ -1,0 +1,276 @@
+.main_steps {
+    padding-top: vw(50);
+    padding-bottom: vw(50);
+    @media all and (max-width: 1024px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media all and (max-width: 767px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    &__title {
+        margin-bottom: vw(40);
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: vw(48);
+        line-height: 108%;
+        color: var(--text-body-dark);
+        @media all and (max-width: 1024px) {
+            font-size: 40px;
+            margin-bottom: 32px;
+        }
+        @media all and (max-width: 960px) {
+            padding-left: 64px;
+        }
+        @media all and (max-width: 767px) {
+            margin-bottom: 28px;
+            font-size: 32px;
+            padding-left: 0;
+        }
+    }
+    &__blocks {
+        background: var(--main-div-bg-green-gray);
+        border-radius: vw(24);
+        padding: vw(48);
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        @media all and (max-width: 1024px) {
+            padding: 40px;
+            border-radius: 24px;
+        }
+        @media all and (max-width: 960px) {
+            flex-direction: column;
+            padding: 40px;
+        }
+        @media all and (max-width: 767px) {
+            padding: 32px 24px;
+            border-radius: 20px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: vw(55);
+            left: vw(50);
+            width: vw(1023);
+            height: vw(152);
+            pointer-events: none;
+            background: url(../img/plane.png) 50% / 100% no-repeat;
+            @media all and (max-width: 1024px) {
+                max-width: 1023px;
+                width: 100%;
+                top: 30px;
+                left: 0px;
+                height: 150px;
+            }
+            @media all and (max-width: 960px) {
+                background: url("data:image/svg+xml,%3Csvg width='48' height='84' viewBox='0 0 48 84' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='25' y1='4.37114e-08' x2='25' y2='84' stroke='%23008347' stroke-width='2' stroke-dasharray='8 8'/%3E%3C/svg%3E%0A") !important;
+                background-repeat: repeat-x;
+                height: 80%;
+                width: 48px;
+                left: 40px;
+            }
+            @media all and (max-width: 767px) {
+                left: 23px;
+            }
+        }
+    }
+    &__block {
+        width: calc(25% - vw(20));
+        position: relative;
+        z-index: 2;
+        @media all and (max-width: 1024px) {
+            width: calc(25% - 20px);
+        }
+        @media all and (max-width: 960px) {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+        &:nth-child(even) {
+            padding-top: vw(80);
+            @media all and (max-width: 1024px) {
+                padding-top: 72px;
+            }
+            @media all and (max-width: 960px) {
+                padding-top: 0;
+            }
+        }
+    }
+    &__number {
+        border-radius: 100%;
+        background: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='36' cy='36' r='28' fill='white' /%3E%3Ccircle cx='36' cy='36' r='32' stroke='white' stroke-opacity='0.4' stroke-width='8' /%3E%3C/svg%3E") 50% / 100% no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: vw(72);
+        height: vw(72);
+        margin-bottom: vw(16);
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: vw(40);
+        line-height: 108%;
+        text-align: center;
+        color: var(--text-body-green);
+        @media all and (max-width: 1024px) {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 16px;
+            font-size: 32px;
+        }
+        @media all and (max-width: 960px) {
+            width: 48px;
+            height: 48px;
+            font-size: 28px;
+            flex: 0 0 48px;
+            margin-right: 16px;
+            margin-bottom: 0;
+        }
+    }
+    &__tit {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: vw(28);
+        line-height: 128%;
+        color: var(--text-hedline-dark);
+        margin-bottom: vw(16);
+        @media all and (max-width: 1024px) {
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+        @media all and (max-width: 960px) {
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+    }
+    &__txt {
+        font-weight: 400;
+        font-size: vw(18);
+        line-height: 156%;
+        color: var(--text-body-dark);
+        @media all and (max-width: 1024px) {
+            font-size: 16px;
+        }
+        @media all and (max-width: 960px) {
+            font-size: 14px;
+        }
+    }
+    &__tel {
+        display: inline-block;
+        font-weight: 500;
+        font-size: vw(20);
+        line-height: 140%;
+        color: var(--text-body-dark);
+        text-decoration: none;
+        margin-top: vw(8);
+        margin-bottom: vw(24);
+        @media all and (max-width: 1024px) {
+            font-size: 18px;
+            margin-top: 16px;
+            margin-bottom: 20px;
+        }
+        @media all and (max-width: 960px) {
+            font-size: 18px;
+            margin-top: 4px;
+            margin-bottom: 16px;
+        }
+    }
+    &__small {
+        margin-top: vw(16);
+        font-weight: 400;
+        font-size: vw(14);
+        line-height: 156%;
+        color: var(--text-body-gray);
+        @media all and (max-width: 1024px) {
+            font-size: 14px;
+            margin-top: 16px;
+        }
+        @media all and (max-width: 960px) {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__btn {
+        border: 0;
+        font-weight: 500;
+        font-size: vw(16);
+        line-height: 150%;
+        text-align: center;
+        color: var(--button-primary-label-default);
+        background: var(--button-primary-bg-default);
+        border-radius: vw(360);
+        padding: vw(12) vw(24);
+        cursor: pointer;
+        white-space: nowrap;
+        @media all and (max-width: 1024px) {
+            font-size: 14px;
+            padding: 9px 24px;
+            border-radius: 360px;
+        }
+        &:hover {
+            background: var(--button-primary-bg-hover);
+        }
+        &:active {
+            background: var(--button-primary-bg-active);
+        }
+    }
+    &__text {
+        position: relative;
+        max-width: vw(872);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+        font-size: vw(16);
+        line-height: 148%;
+        color: var(--text-body-dark);
+        margin-top: vw(24);
+        padding-left: vw(64);
+        @media all and (max-width: 1024px) {
+            max-width: 100%;
+            margin-top: 24px;
+            padding-left: 58px;
+            font-size: 16px;
+        }
+        @media all and (max-width: 960px) {
+            margin-top: 36px;
+            padding-left: 50px;
+        }
+        @media all and (max-width: 767px) {
+            padding-left: 48px;
+            margin-top: 16px;
+        }
+        a {
+            text-decoration: none;
+            color: var(--text-body-green);
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: vw(40);
+            height: vw(40);
+            margin-top: vw(-20);
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' rx='20' fill='%2325CC63' /%3E%3Cpath d='M28.762 11.1331C26.4225 8.7915 23.311 7.50132 19.996 7.5C13.1657 7.5 7.60664 13.0569 7.6039 19.8873C7.60303 22.0707 8.17364 24.2019 9.25805 26.0805L7.5 32.5L14.0692 30.7774C15.8792 31.7642 17.917 32.2843 19.9911 32.2852H19.9962C26.8258 32.2852 32.3854 26.7276 32.3882 19.8972C32.3895 16.5871 31.1017 13.4746 28.762 11.1331ZM19.9962 30.193H19.992C18.1438 30.1923 16.3311 29.6959 14.7497 28.7578L14.3735 28.5346L10.4753 29.5569L11.5158 25.7574L11.2708 25.3678C10.2398 23.7284 9.6953 21.8336 9.69611 19.8881C9.69833 14.211 14.3188 9.59227 20.0002 9.59227C22.7512 9.59331 25.3373 10.6658 27.2819 12.612C29.2265 14.5581 30.2969 17.1452 30.2958 19.8964C30.2936 25.574 25.6732 30.193 19.9962 30.193ZM25.6458 22.4814C25.3361 22.3265 23.8139 21.5777 23.53 21.4744C23.2462 21.371 23.0398 21.3194 22.8333 21.6293C22.627 21.9392 22.0336 22.6364 21.8529 22.843C21.6723 23.0496 21.4917 23.0754 21.1821 22.9205C20.8724 22.7655 19.8747 22.4387 18.6921 21.3841C17.7716 20.5634 17.1502 19.5497 16.9695 19.2398C16.7889 18.9299 16.9503 18.7624 17.1053 18.6081C17.2446 18.4694 17.415 18.2465 17.5698 18.0658C17.7246 17.8851 17.7762 17.7559 17.8794 17.5493C17.9826 17.3427 17.931 17.162 17.8536 17.007C17.7762 16.8521 17.1569 15.3285 16.8989 14.7088C16.6476 14.1052 16.3923 14.1869 16.2022 14.1774C16.0218 14.1684 15.8152 14.1665 15.6088 14.1665C15.4024 14.1665 15.0669 14.244 14.7831 14.5538C14.4993 14.8637 13.6994 15.6126 13.6994 17.1361C13.6994 18.6597 14.8089 20.1316 14.9637 20.3382C15.1186 20.5447 17.1471 23.6713 20.2532 25.0121C20.9919 25.331 21.5687 25.5214 22.0184 25.6641C22.7601 25.8996 23.4351 25.8664 23.9687 25.7868C24.5635 25.6979 25.8005 25.038 26.0586 24.3149C26.3167 23.5918 26.3167 22.9721 26.2392 22.843C26.1618 22.7139 25.9554 22.6364 25.6458 22.4814Z' fill='white' /%3E%3C/svg%3E") 50% / 100% no-repeat;
+            @media all and (max-width: 1024px) {
+                width: 40px;
+                height: 40px;
+                margin-top: -20px;
+            }
+            @media all and (max-width: 767px) {
+                top: 0;
+                margin-top: 0;
+            }
+        }
+    }
+}

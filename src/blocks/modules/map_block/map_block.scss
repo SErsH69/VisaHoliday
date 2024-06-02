@@ -1,0 +1,179 @@
+.map_block {
+  padding-top: vw(50);
+  padding-bottom: vw(40);
+  @media all and (max-width: 1024px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__in {
+    position: relative;
+    padding: vw(48);
+    @media all and (max-width: 1024px) {
+        padding: 40px;
+    }
+    @media all and (max-width: 960px) {
+        padding: 26px 40px;
+    }
+    @media all and (max-width: 767px) {
+        padding: 0;
+        padding-bottom: 384px;
+    }
+  }
+  &__map {
+    height: 100%;
+    width: 100%;
+    border-radius: vw(24);
+    overflow: hidden;
+    position: absolute;
+    inset: 0;
+    * {
+        transition: unset;
+    }
+    @media all and (max-width: 1024px) {
+        border-radius: 24px;
+    }
+    @media all and (max-width: 767px) {
+        border-radius: 20px;
+    }
+  }
+  &__contacts {
+    position: relative;
+    z-index: 2;
+    background: var(--main-div-bg-white);
+    border-radius: vw(24);
+    padding: vw(40) vw(32);
+    max-width: vw(392);
+    width: 100%;
+    @media all and (max-width: 1024px) {
+        max-width: 392px;
+        padding: 32px 24px;
+        border-radius: 24px;
+    }
+    @media all and (max-width: 767px) {
+        border-radius: 20px;
+        padding: 24px 20px;
+        max-width: 100%;
+    }
+  }
+  &__title {
+    font-family: var(--second-family);
+    margin-bottom: vw(32);
+    font-weight: 600;
+    font-size: vw(40);
+    line-height: 108%;
+    color: var(--text-hedline-dark);
+    @media all and (max-width: 1024px) {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+    @media all and (max-width: 767px) {
+        margin-bottom: 24px;
+        font-size: 28px;
+    }
+  }
+  &__metro {
+    position: relative;
+    font-weight: 500;
+    font-size: vw(16);
+    line-height: 150%;
+    color: var(--text-body-dark);
+    margin-bottom: vw(8);
+    padding-left: vw(32);
+    @media all and (max-width: 1024px) {
+        font-size: 16px;
+        margin-bottom: 8px;
+        padding-left: 32px;
+    }
+    @media all and (max-width: 767px) {
+        font-size: 14px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: vw(24);
+        height: vw(24);
+        margin-top: vw(-12);
+        background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='12' fill='%23008347'/%3E%3Cpath d='M7.20898 7.04688H8.74023L11.6182 14.7236L14.4893 7.04688H16.0205L12.2197 17H11.0029L7.20898 7.04688ZM6.51172 7.04688H7.96777L8.2207 13.6914V17H6.51172V7.04688ZM15.2617 7.04688H16.7246V17H15.0088V13.6914L15.2617 7.04688Z' fill='white'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+        @media all and (max-width: 1024px) {
+            width: 24px;
+            height: 24px;
+            margin-top: -12px;
+        }
+    }
+  }
+  &__adr {
+    font-weight: 400;
+    font-size: vw(16);
+    line-height: 148%;
+    color: var(--text-body-gray);
+    margin-bottom: vw(24);
+    @media all and (max-width: 1024px) {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    @media all and (max-width: 767px) {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+  }
+  &__tel {
+    margin-bottom: vw(24);
+    @media all and (max-width: 1024px) {
+        margin-bottom: 24px;
+    }
+    @media all and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+    span {
+        font-weight: 400;
+        font-size: vw(16);
+        line-height: 148%;
+        color: var(--text-body-gray);
+        @media all and (max-width: 1024px) {
+            font-size: 16px;
+        }
+        @media all and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+    a {
+        margin-top: vw(4);
+        font-weight: 500;
+        font-size: vw(18);
+        line-height: 144%;
+        color: var(--text-body-dark);
+        text-decoration: none;
+        display: block;
+        @media all and (max-width: 1024px) {
+            font-size: 16px;
+            margin-top: 4px;
+        }
+    }
+  }
+  &__work {
+    font-size: vw(16);
+    @media all and (max-width: 1024px) {
+        font-size: 16px;
+    }
+    @media all and (max-width: 767px) {
+        font-size: 14px;
+    }
+    div {
+        margin-top: vw(8);
+        @media all and (max-width: 767px) {
+            font-size: 16px;
+            margin-top: 8px;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    span {
+        font-weight: 400;
+        line-height: 148%;
+        color: var(--text-body-gray);
+    }
+  }
+}
