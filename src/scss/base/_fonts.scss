@@ -1,7 +1,13 @@
 @font-face {
-	font-family: "Akrobatblack";
+	font-family: "Akrobat";
 	font-display: swap;
-	src: url("../fonts/Akrobatblack.woff2") format("woff2"), url("../fonts/Akrobatblack.woff") format("woff"), url("../fonts/Akrobatblack.ttf") format("ttf");
+	src: url("../fonts/Akrobat.woff2") format("woff2"), url("../fonts/Akrobat.woff") format("woff"), url("../fonts/Akrobat.ttf") format("ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Akrobatbold";
+	font-display: swap;
+	src: url("../fonts/Akrobatbold.woff2") format("woff2"), url("../fonts/Akrobatbold.woff") format("woff"), url("../fonts/Akrobatbold.ttf") format("ttf");
 	font-weight: 400;
 }
 @font-face {
@@ -29,20 +35,14 @@
 	font-weight: 400;
 }
 @font-face {
-	font-family: "Akrobatbold";
-	font-display: swap;
-	src: url("../fonts/Akrobatbold.woff2") format("woff2"), url("../fonts/Akrobatbold.woff") format("woff"), url("../fonts/Akrobatbold.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
-	font-family: "Akrobat";
-	font-display: swap;
-	src: url("../fonts/Akrobat.woff2") format("woff2"), url("../fonts/Akrobat.woff") format("woff"), url("../fonts/Akrobat.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
 	font-family: "Akrobatextrabold";
 	font-display: swap;
 	src: url("../fonts/Akrobatextrabold.woff2") format("woff2"), url("../fonts/Akrobatextrabold.woff") format("woff"), url("../fonts/Akrobatextrabold.ttf") format("ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Akrobatblack";
+	font-display: swap;
+	src: url("../fonts/Akrobatblack.woff2") format("woff2"), url("../fonts/Akrobatblack.woff") format("woff"), url("../fonts/Akrobatblack.ttf") format("ttf");
 	font-weight: 400;
 }
