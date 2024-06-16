@@ -45,6 +45,23 @@
         border-radius: vw(24);
         width: calc(25% - vw(24));
         font-size: 0;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: vw(24);
+            right: vw(24);
+            pointer-events: none;
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' rx='20' fill='%23EAEAEA' fill-opacity='0.8' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.1765 27.3948L27.9412 20.6723C28.4641 20.3735 28.4641 19.6265 27.9412 19.3277L16.1765 12.6052C15.6536 12.3064 15 12.6799 15 13.2774V26.7226C15 27.3201 15.6536 27.6936 16.1765 27.3948Z' fill='white' /%3E%3C/svg%3E") 50% / 100% no-repeat;
+            width: vw(40);
+            height: vw(40);
+            @media all and (max-width: 1024px) {
+                width: 40px;
+                height: 40px;
+                top: 24px;
+                right: 24px;
+            }
+        }
         @media all and (max-width: 1024px) {
             margin-left: 12px;
             margin-right: 12px;

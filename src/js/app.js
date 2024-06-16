@@ -6,6 +6,7 @@ import Vue from 'vue/dist/vue.js';
 import Header from '../blocks/modules/header/header.js';
 import MainRev from '../blocks/modules/main_rev/main_rev.js';
 import MapBlock from '../blocks/modules/map_block/map_block.js';
+import BlogBlock from '../blocks/modules/blog_block/blog_block.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
 window.app = new Vue({
@@ -22,6 +23,7 @@ window.app = new Vue({
         }),
         mainRev: new MainRev(),
         mapBlock: new MapBlock(),
+        blogBlock: new BlogBlock(),
         modals: new Modals({
             modalsSelector: "data-modal",
             modalsOpenerSelector: "data-modal-id",
@@ -38,6 +40,7 @@ window.app = new Vue({
         this.header.init();
         this.mainRev.init();
         this.mapBlock.init();
+        this.blogBlock.init();
     },
     computed: {
         isMobile: function () {
