@@ -3559,6 +3559,52 @@ textarea {
      object-fit: cover;
 }
 
+.blog_block__pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.8333333333vw;
+}
+
+.blog_block__page {
+  margin-left: 0.4166666667vw;
+  margin-right: 0.4166666667vw;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375vw;
+  line-height: 144%;
+  width: 2.5vw;
+  height: 2.5vw;
+  flex: 0 0 2.5vw;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--navigation-pagination-page-label-default);
+}
+
+.blog_block__page.isActive,
+.blog_block__page:hover {
+  color: #fff;
+  background: #008347;
+}
+
+.blog_block__page--prev {
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 5L9 12L16 19' stroke='%23323232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% no-repeat;
+  background-size: 1.25vw;
+  margin-right: 1.5625vw;
+}
+
+.blog_block__page--next {
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 5L9 12L16 19' stroke='%23323232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% no-repeat;
+  background-size: 1.25vw;
+  transform: rotate(180deg);
+  margin-left: 1.5625vw;
+}
+
 .cont_map {
   padding-bottom: 0.625vw;
 }
@@ -4873,6 +4919,29 @@ textarea {
     margin-bottom: 24px;
     width: calc(33.3% - 24px);
     border-radius: 24px;
+  }
+
+  .blog_block__pages {
+    margin-top: 16px;
+  }
+
+  .blog_block__page {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 18px;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+  }
+
+  .blog_block__page--prev {
+    margin-right: 16px;
+    background-size: 24px;
+  }
+
+  .blog_block__page--next {
+    margin-left: 16px;
+    background-size: 24px;
   }
 
   .cont_map {
