@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <title>Блог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap&_v=20240616015458" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20240616015458">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8a69628d-9012-482b-962d-9bd92d6f2d51&lang=ru_RU&_v=20220914090452" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+        <header class="header">
+    <div class="header__top" v-if="sizes.window >= 1023">
+        <div class="header__in center_block">
+            <div class="header__adr">г. Москва, 3-я улица Ямского поля, 18</div>
+            <a href="tel:84951205777" class="header__tel">8-495-120 57-77</a>
+            <a href="#" target="_blank" class="header__wts" rel="noopener noreferrer">Напишите в Whatsapp</a>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="header__in center_block">
+            <a href="/" class="header__logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+            <nav class="header__menu" v-if="sizes.window >= 1023">
+                <ul>
+                    <li><a href="#">Страны</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="header__button" v-if="sizes.window >= 1023">Бесплатная консультация</button>
+            <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}" v-if="sizes.window <= 1023">
+                <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
+                <div class="header__burger--body">
+                    <div class="header__burger--top">
+                        <a href="/" class="header__logo">
+                            <img src="./img/logo.svg" alt="">
+                        </a>
+                        <div class="header__burger--close" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
+                    </div>
+                    <div class="header__burger--item">
+                        <nav class="header__burger--menu" @click="header.toogleMobileMenu.apply(header)">
+                            <ul>
+                                <li><a href="#">Страны</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__burger--info">
+                        <div class="header__adr">г. Москва, 3-я улица Ямского поля, 18</div>
+                        <a href="tel:84951205777" class="header__tel">8-495-120 57-77</a>
+                        <a href="#" target="_blank" class="header__wts" rel="noopener noreferrer">Напишите в Whatsapp</a>
+                        <button class="header__button">Бесплатная консультация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="content">
+            <div class="breadcrums center_block">
+    <span><a href="#">Главная</a></span>
+    <div class="breadcrums__splash"></div>
+    <span>Страница</span>
+</div>
+            <div class="blog_block center_block">
+    <h1 class="blog_block__title">Блог</h1>
+    <div class="blog_block__blocks">
+        <a href="" class="blog_block__block">
+            <picture><source srcset="./img/f1.webp" type="image/webp"><img src="./img/f1.jpg" alt=""></picture>
+        </a>
+        <a href="" class="blog_block__block">
+            <picture><source srcset="./img/f2.webp" type="image/webp"><img src="./img/f2.jpg" alt=""></picture>
+        </a>
+        <a href="" class="blog_block__block">
+            <picture><source srcset="./img/f3.webp" type="image/webp"><img src="./img/f3.jpg" alt=""></picture>
+        </a>
+        <a href="" class="blog_block__block">
+            <picture><source srcset="./img/f4.webp" type="image/webp"><img src="./img/f4.jpg" alt=""></picture>
+        </a>
+        <a href="" class="blog_block__block">
+            <picture><source srcset="./img/f5.webp" type="image/webp"><img src="./img/f5.jpg" alt=""></picture>
+        </a>
+        <a href="" class="blog_block__block">
+            <picture><source srcset="./img/f6.webp" type="image/webp"><img src="./img/f6.jpg" alt=""></picture>
+        </a>
+        <a href="" class="blog_block__block">
+            <picture><source srcset="./img/f7.webp" type="image/webp"><img src="./img/f7.jpg" alt=""></picture>
+        </a>
+        <a href="" class="blog_block__block">
+            <picture><source srcset="./img/f8.webp" type="image/webp"><img src="./img/f8.jpg" alt=""></picture>
+        </a>
+    </div>
+</div>
+        </main>
+        <footer class="footer">
+    <div class="footer__in center_block">
+        <div class="footer__top">
+            <a href="#" class="footer__logo">
+                <img src="./img/logo.svg" alt="">
+            </a>
+            <nav class="footer__menu">
+                <ul>
+                    <li><a href="#">Страны</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copy">© 2019-2024 Все права защищены. <br>Копирование материалов с сайта запрещено.</div>
+            <div class="footer__socs">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="footer__soc">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#26A4E3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.55368 19.2894C14.3841 16.7492 18.2719 15.0745 20.2172 14.2654C25.7714 11.9552 26.9256 11.5539 27.6778 11.5407C27.8433 11.5378 28.2132 11.5788 28.4528 11.7732C28.6551 11.9374 28.7108 12.1592 28.7374 12.3148C28.7641 12.4705 28.7973 12.8251 28.7709 13.1022C28.4699 16.2646 27.1675 23.9391 26.505 27.4811C26.2246 28.9799 25.6726 29.4824 25.1382 29.5316C23.9767 29.6385 23.0948 28.764 21.9699 28.0267C20.2096 26.8728 19.2152 26.1545 17.5065 25.0285C15.5319 23.7273 16.812 23.0121 17.9373 21.8433C18.2318 21.5374 23.3491 16.8828 23.4482 16.4605C23.4606 16.4077 23.4721 16.2109 23.3551 16.1069C23.2382 16.003 23.0656 16.0385 22.941 16.0668C22.7645 16.1069 19.9525 17.9655 14.5049 21.6428C13.7067 22.1909 12.9838 22.4579 12.336 22.4439C11.6219 22.4285 10.2483 22.0402 9.22709 21.7082C7.97459 21.3011 6.97913 21.0858 7.06581 20.3944C7.11096 20.0342 7.60692 19.6659 8.55368 19.2894Z" fill="white" />
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="footer__soc">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#25CC63" />
+                        <path d="M28.762 11.1331C26.4225 8.7915 23.311 7.50132 19.996 7.5C13.1657 7.5 7.60664 13.0569 7.6039 19.8873C7.60303 22.0707 8.17364 24.2019 9.25805 26.0805L7.5 32.5L14.0692 30.7774C15.8792 31.7642 17.917 32.2843 19.9911 32.2852H19.9962C26.8258 32.2852 32.3854 26.7276 32.3882 19.8972C32.3895 16.5871 31.1017 13.4746 28.762 11.1331ZM19.9962 30.193H19.992C18.1438 30.1923 16.3311 29.6959 14.7497 28.7578L14.3735 28.5346L10.4753 29.5569L11.5158 25.7574L11.2708 25.3678C10.2398 23.7284 9.6953 21.8336 9.69611 19.8881C9.69833 14.211 14.3188 9.59227 20.0002 9.59227C22.7512 9.59331 25.3373 10.6658 27.2819 12.612C29.2265 14.5581 30.2969 17.1452 30.2958 19.8964C30.2936 25.574 25.6732 30.193 19.9962 30.193ZM25.6458 22.4814C25.3361 22.3265 23.8139 21.5777 23.53 21.4744C23.2462 21.371 23.0398 21.3194 22.8333 21.6293C22.627 21.9392 22.0336 22.6364 21.8529 22.843C21.6723 23.0496 21.4917 23.0754 21.1821 22.9205C20.8724 22.7655 19.8747 22.4387 18.6921 21.3841C17.7716 20.5634 17.1502 19.5497 16.9695 19.2398C16.7889 18.9299 16.9503 18.7624 17.1053 18.6081C17.2446 18.4694 17.415 18.2465 17.5698 18.0658C17.7246 17.8851 17.7762 17.7559 17.8794 17.5493C17.9826 17.3427 17.931 17.162 17.8536 17.007C17.7762 16.8521 17.1569 15.3285 16.8989 14.7088C16.6476 14.1052 16.3923 14.1869 16.2022 14.1774C16.0218 14.1684 15.8152 14.1665 15.6088 14.1665C15.4024 14.1665 15.0669 14.244 14.7831 14.5538C14.4993 14.8637 13.6994 15.6126 13.6994 17.1361C13.6994 18.6597 14.8089 20.1316 14.9637 20.3382C15.1186 20.5447 17.1471 23.6713 20.2532 25.0121C20.9919 25.331 21.5687 25.5214 22.0184 25.6641C22.7601 25.8996 23.4351 25.8664 23.9687 25.7868C24.5635 25.6979 25.8005 25.038 26.0586 24.3149C26.3167 23.5918 26.3167 22.9721 26.2392 22.843C26.1618 22.7139 25.9554 22.6364 25.6458 22.4814Z" fill="white" />
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="footer__soc">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#0077FF" />
+                        <path d="M21.5394 27.2917C14.2064 27.2917 9.75782 22.2043 9.58313 13.75H13.2974C13.4131 19.9607 16.2377 22.5923 18.4041 23.1336V13.75H21.9629V19.1096C24.0521 18.878 26.2388 16.4405 26.9741 13.75H30.4781C29.9165 17.058 27.5358 19.4955 25.8538 20.501C27.5378 21.3146 30.2455 23.4423 31.2906 27.2917H27.4403C26.6278 24.719 24.6351 22.7263 21.9649 22.4551V27.2917H21.5394Z" fill="white" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+        <div class="modal" data-modal="1">
+    <div class="modal__in">
+        <div class="modal__closer"></div>
+        <div class="modal__title">Авторизация</div>
+        <div class="modal__text">На указанный номер, будет направлен смс-код для подтверждения</div>
+        <form action="/login" method="POST" class="modal__form">
+            <div class="modal__form--input">
+                <input type="tel" id="tel" name="phone" placeholder="Телефон" required>
+                <label for="tel">Телефон</label>
+            </div>
+            <div class="modal__form--submit">
+                <input id="sb2" type="submit" value="Войти">
+                <label for="sb2"></label>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal modal_sends" data-modal="2">
+    <div class="modal__in">
+        <div class="modal__closer"></div>
+        <div class="modal__title">Отписаться от рассылки</div>
+        <div class="modal__text">Для того чтобы отписаться от рассылки <br>введите номер телефона</div>
+        <form action="/unsubcribe" method="POST" class="modal__form">
+            <div class="modal__form--input">
+                <input type="tel" id="tel2" name="phone" placeholder="Телефон" required>
+                <label for="tel2">Телефон</label>
+            </div>
+            <div class="modal__form--submit">
+                <input id="sb1" type="submit" value="Отписаться">
+                <label for="sb1"></label>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal modal_check" data-modal="3">
+    <div class="modal__in">
+        <div class="modal__closer"></div>
+        <div class="modal__title">Заполните форму</div>
+        <form action="/newform" class="modal__form" method="POST">
+            <div class="modal__form--input">
+                <input type="text" id="name1" name="fio" placeholder="Ф.И.О" required>
+                <label for="name1">Ф.И.О</label>
+            </div>
+            <div class="modal__form--input">
+                <input type="text" id="date1" name="birthday" placeholder="Дата рождения" required>
+                <label for="date1">Дата рождения</label>
+            </div>
+            <div class="modal__form--input">
+                <input type="text" id="adr1" name="address" placeholder="Адрес проживания" required>
+                <label for="adr1">Адрес проживания</label>
+            </div>
+            <div class="modal__form--input">
+                <input type="email" id="email1" name="email" placeholder="Почта" required>
+                <label for="email1">Почта</label>
+            </div>
+            <div class="modal__form--input">
+                <input type="tel" id="tel3" name="phone" placeholder="Телефон" required>
+                <label for="tel3">Телефон</label>
+            </div>
+            <label class="modal__form--custom-checkbox">
+                <input type="checkbox" name="checkbox1" value="checked">
+                <span><span>Я даю свое <a href="#" target="_blank"> Согласие на обработку персональных данных</a></span></span>
+            </label>
+            <label class="modal__form--custom-checkbox">
+                <input type="checkbox" name="checkbox2" value="checked">
+                <span><span>Я даю свое Предварительное <br> <a href="#" target="_blank"> согласие на получение рекламных материалов</a></span></span>
+            </label>
+            <div class="modal__form--submit">
+                <input id="sb3" type="submit" value="Получить деньги">
+                <label for="sb3"></label>
+            </div>
+        </form>
+    </div>
+</div>
+    </div>
+    <script src="js/app.min.js?_v=20240616015458"></script>
+</body>
+</html>
