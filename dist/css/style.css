@@ -3509,6 +3509,103 @@ textarea {
   height: 0.3125vw;
 }
 
+.block_country {
+  padding-bottom: 2.0833333333vw;
+}
+
+.block_country__title {
+  margin: 0;
+  margin-bottom: 2.2916666667vw;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 2.9166666667vw;
+  line-height: 108%;
+  color: var(--text-hedline-dark);
+}
+
+.block_country__items {
+  margin-bottom: 4.1666666667vw;
+  overflow: auto;
+}
+
+.block_country__items--scroll {
+  width: 100%;
+  display: flex;
+}
+
+.block_country__items--item {
+  margin-right: 0.625vw;
+  border-radius: 18.75vw;
+  padding: 0.5729166667vw 1.25vw;
+  font-weight: 500;
+  font-size: 0.9375vw;
+  line-height: 144%;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #323232;
+  background: #fff;
+  white-space: nowrap;
+}
+
+.block_country__items--item:hover {
+  background: #008347;
+  color: #fff;
+}
+
+.block_country__blockss:not(:last-child) {
+  margin-bottom: 6.25vw;
+}
+
+.block_country__blockss--title {
+  margin-bottom: 1.6666666667vw;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 2.5vw;
+  line-height: 108%;
+  color: var(--text-hedline-dark);
+}
+
+.block_country__blockss--items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.3125vw;
+  margin-right: -0.3125vw;
+}
+
+.block_country__blockss--item {
+  margin-bottom: 0.625vw;
+  margin-left: 0.3125vw;
+  margin-right: 0.3125vw;
+  width: calc(16.66% - 0.625vw);
+  background: #fff;
+  border-radius: 1.0416666667vw;
+  padding-top: 1.4583333333vw;
+  padding-bottom: 1.1979166667vw;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.block_country__blockss--img {
+  font-size: 0;
+  width: 2.0833333333vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.8333333333vw;
+}
+
+.block_country__blockss--img img {
+  width: 100%;
+}
+
+.block_country__blockss--tit {
+  font-weight: 500;
+  font-size: 0.9375vw;
+  line-height: 144%;
+  color: var(--main-menu-item-default);
+}
+
 .about_page__about {
   padding-bottom: 0.625vw;
   display: flex;
@@ -5077,6 +5174,59 @@ textarea {
     font-size: 16px;
   }
 
+  .block_country {
+    padding-bottom: 40px;
+  }
+
+  .block_country__title {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+
+  .block_country__items {
+    margin-bottom: 40px;
+  }
+
+  .block_country__items--item {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 360px;
+    margin-right: 4px;
+  }
+
+  .block_country__blockss:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  .block_country__blockss--title {
+    font-size: 40px;
+    margin-bottom: 28px;
+  }
+
+  .block_country__blockss--items {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .block_country__blockss--item {
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 12px;
+    width: calc(25% - 12px);
+    padding-top: 28px;
+    padding-bottom: 23px;
+    border-radius: 20px;
+  }
+
+  .block_country__blockss--img {
+    width: 40px;
+    margin-bottom: 16px;
+  }
+
+  .block_country__blockss--tit {
+    font-size: 18px;
+  }
+
   .about_page__about {
     margin-bottom: 12px;
     align-items: unset;
@@ -5858,6 +6008,15 @@ textarea {
     padding: 26px 40px;
   }
 
+  .block_country__blockss--img {
+    width: 33px;
+    margin-bottom: 15px;
+  }
+
+  .block_country__blockss--tit {
+    font-size: 16px;
+  }
+
   .about_page__history--number {
     font-size: 48px;
     flex: 0 0 96px;
@@ -6363,6 +6522,42 @@ textarea {
     margin-right: 7px;
     width: 6px;
     height: 6px;
+  }
+
+  .block_country {
+    padding-bottom: 32px;
+  }
+
+  .block_country__title {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+  .block_country__items {
+    margin-bottom: 32px;
+    margin-right: -20px;
+    width: calc(100% + 20px);
+  }
+
+  .block_country__blockss:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .block_country__blockss--title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .block_country__blockss--items {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+
+  .block_country__blockss--item {
+    width: calc(50% - 16px);
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 8px;
   }
 
   .about_page__about {
