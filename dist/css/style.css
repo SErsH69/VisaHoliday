@@ -3730,6 +3730,55 @@ textarea {
   color: var(--text-list-text);
 }
 
+.serv_block__ofr--block {
+  display: flex;
+  border-radius: 1.25vw;
+  padding: 1.6666666667vw;
+  background: #fff;
+}
+
+.serv_block__ofr--block:not(:last-child) {
+  margin-bottom: 2.0833333333vw;
+}
+
+.serv_block__ofr--l-side {
+  width: 100%;
+  margin-right: 1.4583333333vw;
+}
+
+.serv_block__ofr--title {
+  margin-bottom: 1.6666666667vw;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 2.5vw;
+  line-height: 108%;
+  color: var(--text-hedline-dark);
+}
+
+.serv_block__ofr--text {
+  font-weight: 400;
+  font-size: 0.9375vw;
+  line-height: 156%;
+  color: var(--text-body-dark);
+}
+
+.serv_block__ofr--r-side {
+  border-radius: 1.25vw;
+  width: 18.75vw;
+  flex: 0 0 18.75vw;
+  font-size: 0;
+  overflow: hidden;
+  height: 12.5vw;
+}
+
+.serv_block__ofr--r-side img {
+  width: 100%;
+  border-radius: 1.25vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .main_fr {
   padding-bottom: 2.6041666667vw;
 }
@@ -6168,6 +6217,35 @@ textarea {
     font-size: 18px;
   }
 
+  .serv_block__ofr--block {
+    border-radius: 24px;
+    padding: 32px;
+  }
+
+  .serv_block__ofr--block:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .serv_block__ofr--l-side {
+    margin-right: 28px;
+  }
+
+  .serv_block__ofr--title {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+
+  .serv_block__ofr--text {
+    font-size: 18px;
+  }
+
+  .serv_block__ofr--r-side {
+    width: 360px;
+    height: 240px;
+    flex: 0 0 360px;
+    border-radius: 24px;
+  }
+
   .main_fr {
     padding-bottom: 40px;
   }
@@ -8075,6 +8153,40 @@ textarea {
 
   .serv_block__pop--txt {
     font-size: 16px;
+  }
+
+  .serv_block__ofr--block {
+    padding: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .serv_block__ofr--block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .serv_block__ofr--l-side {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .serv_block__ofr--title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .serv_block__ofr--text {
+    font-size: 16px;
+  }
+
+  .serv_block__ofr--r-side img {
+    border-radius: 20px;
+  }
+
+  .serv_block__ofr--r-side {
+    width: 100%;
+    height: 240px;
+    flex: none;
+    border-radius: 20px;
   }
 
   .main_fr {
