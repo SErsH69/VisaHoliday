@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./img/favicon.png">
-    <title>Главная</title>
+    <title>Страна</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap&_v=20240616160427" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20240616160427">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap&_v=20240621090515" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20240621090515">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=8a69628d-9012-482b-962d-9bd92d6f2d51&lang=ru_RU&_v=20220914090452" type="text/javascript"></script>
 </head>
 <body>
@@ -69,214 +69,96 @@
     </div>
 </header>
         <main class="content">
-            <div class="main_first center_block">
-    <div class="main_first__blocks">
-        <div class="main_first__l-side">
-            <div class="main_first__form">
-                <div class="main_first__form--title">Оформим визу по всем <br>направлениям, без вашего <br>присутствия</div>
-                <div class="main_first__form--text">Получите бесплатную консультацию про типы виз <br>и необходимые документы прямо сейчас.</div>
+            <div class="main_fr center_block">
+    <div class="main_fr__blocks">
+        <div class="main_fr__l-side">
+            <div class="main_fr__form">
+                <div class="main_fr__form--title">Виза в Китай</div>
+                <div class="main_fr__form--text">Получите консультацию по требуемым документам и стоимости</div>
                 <form action="">
                     <input type="text" placeholder="Имя">
                     <input type="tel" placeholder="Телефон">
-                    <div class="main_first__form--item">
-                        <input type="submit" value="Узнать стоимость">
+                    <div class="main_fr__form--item">
+                        <input type="submit" value="Оставить заявку">
                         <div>Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных.</div>
                     </div>
                 </form>
             </div>
-            <div class="main_first__flags">
-                <div class="main_first__flags--title">Последние оформленные визы</div>
-                <div class="main_first__flags--blocks">
-                    <a href="#" class="main_first__flags--block">
-                        <div class="main_first__flags--icon">
-                            <img src="./img/f1.svg" alt="">
-                        </div>
-                        <div class="main_first__flags--name">Германия</div>
-                    </a>
-                    <a href="#" class="main_first__flags--block">
-                        <div class="main_first__flags--icon">
-                            <img src="./img/f1.svg" alt="">
-                        </div>
-                        <div class="main_first__flags--name">Германия</div>
-                    </a>
-                    <a href="#" class="main_first__flags--block">
-                        <div class="main_first__flags--icon">
-                            <img src="./img/f1.svg" alt="">
-                        </div>
-                        <div class="main_first__flags--name">Германия</div>
-                    </a>
-                    <a href="#" class="main_first__flags--block">
-                        <div class="main_first__flags--icon">
-                            <img src="./img/f1.svg" alt="">
-                        </div>
-                        <div class="main_first__flags--name">Германия</div>
-                    </a>
-                    <a href="#" class="main_first__flags--block">
-                        <div class="main_first__flags--icon">
-                            <img src="./img/f1.svg" alt="">
-                        </div>
-                        <div class="main_first__flags--name">Германия</div>
-                    </a>
-                    <a href="#" class="main_first__flags--block">
-                        <div class="main_first__flags--icon">
-                            <img src="./img/f1.svg" alt="">
-                        </div>
-                        <div class="main_first__flags--name">Германия</div>
-                    </a>
-                </div>
-                <a href="#" class="main_first__flags--more">Посмотреть все страны</a>
-            </div>
+            <div class="main_fr__txt" v-if="sizes.window >= 1023">Хотите получить визу в Китай? С удовольствием избавим вас от лишних забот и трудностей! А если возникнут вопросы после получения визы, мы на связи и всегда готовы помочь. Вы не в России? Так даже интереснее.</div>
         </div>
-        <div class="main_first__r-side">
-            <div class="main_first__img--img" v-if="sizes.window <= 1023">
-                <picture><source srcset="./img/img3.webp" type="image/webp"><img src="./img/img3.jpg" alt=""></picture>
+        <div class="main_fr__r-side">
+            <div class="main_fr__img--img" v-if="sizes.window <= 1023">
+                <picture><source srcset="./img/img8.webp" type="image/webp"><img src="./img/img8.jpg" alt=""></picture>
             </div>
-            <div class="main_first__img--info">
-                <div class="main_first__img">
-                    <div class="main_first__img--img" v-if="sizes.window >= 1023">
-                        <picture><source srcset="./img/img3.webp" type="image/webp"><img src="./img/img3.jpg" alt=""></picture>
-                    </div>
-                    <div class="main_first__img--stat">
-                        <div class="main_first__img--txt">Мы с командой строго придерживаемся сроков и гарантируем стопроцентную поддержку на всех этапах.</div>
-                        <div class="main_first__img--name">Юлия Корниенко</div>
-                        <div class="main_first__img--work">Директор компании Visa Holiday</div>
+            <div class="main_fr__img--info">
+                <div class="main_fr__img" v-if="sizes.window >= 1023">
+                    <div class="main_fr__img--img">
+                        <picture><source srcset="./img/img8.webp" type="image/webp"><img src="./img/img8.jpg" alt=""></picture>
                     </div>
                 </div>
-                <div class="main_first__contact">
-                    <div class="main_first__contact--title">Свяжитесь со специалистом</div>
-                    <a href="tel:84951205777" class="main_first__contact--tel">8-495-120 57-77</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="main_first__contact--wts">Напишите в Wathsapp</a>
+                <div class="main_fr__txt" v-if="sizes.window <= 1023">Хотите получить визу в Китай? С удовольствием избавим вас от лишних забот и трудностей! А если возникнут вопросы после получения визы, мы на связи и всегда готовы помочь. Вы не в России? Так даже интереснее.</div>
+                <div class="main_fr__contact">
+                    <div class="main_fr__contact--title">Свяжитесь со специалистом</div>
+                    <a href="tel:84951205777" class="main_fr__contact--tel">8-495-120 57-77</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="main_fr__contact--wts">Напишите в Wathsapp</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-            <div class="main_pref center_block">
-    <div class="main_pref__title">Наши преимущества</div>
-    <div class="main_pref__blocks">
-        <div class="main_pref__block">
-            <div class="main_pref__icon">
-                <img src="./img/p1.svg" alt="">
-            </div>
-            <div class="main_pref__info">
-                <div class="main_pref__tit">Всегда работаем <br>на качество</div>
-                <div class="main_pref__text">К каждому клиенту подходим индивидуально, разбираемся и вникаем в документы подробно</div>
-            </div>
-        </div>
-        <div class="main_pref__block">
-            <div class="main_pref__icon">
-                <img src="./img/p2.svg" alt="">
-            </div>
-            <div class="main_pref__info">
-                <div class="main_pref__tit">Срочное <br>оформление визы</div>
-                <div class="main_pref__text">Оформление визы от 1 рабочего дня</div>
-            </div>
-        </div>
-        <div class="main_pref__block">
-            <div class="main_pref__icon">
-                <img src="./img/p3.svg" alt="">
-            </div>
-            <div class="main_pref__info">
-                <div class="main_pref__tit">8 000 +</div>
-                <div class="main_pref__text">Одобренных и выданных виз </div>
+            <div class="main_gets center_block">
+    <div class="main_gets__in">
+        <div class="main_gets__l-side">
+            <div class="main_gets__title">Что требуется от вас?</div>
+            <div class="main_gets__blocks">
+                <div class="main_gets__block">
+                    <div class="main_gets__number">1</div>
+                    <div class="main_gets__text">Заграничный паспорт</div>
+                </div>
+                <div class="main_gets__block">
+                    <div class="main_gets__number">2</div>
+                    <div class="main_gets__text">2 фотографии на матовой бумаге цветные (3,5 х 4,5 см)</div>
+                </div>
+                <div class="main_gets__block">
+                    <div class="main_gets__number">3</div>
+                    <div class="main_gets__text">Копии гражданского паспорта</div>
+                </div>
+                <div class="main_gets__block">
+                    <div class="main_gets__number">4</div>
+                    <div class="main_gets__text">Выписка <br>o состоянии счёта</div>
+                </div>
             </div>
         </div>
-        <div class="main_pref__block">
-            <div class="main_pref__icon">
-                <img src="./img/p4.svg" alt="">
-            </div>
-            <div class="main_pref__info">
-                <div class="main_pref__tit">100% благодарных клиентов</div>
-                <div class="main_pref__text">Рейтинг Яндекса 5,0</div>
-            </div>
-        </div>
-        <div class="main_pref__block">
-            <div class="main_pref__icon">
-                <img src="./img/p5.svg" alt="">
-            </div>
-            <div class="main_pref__info">
-                <div class="main_pref__tit">Персональный <br>менеджер</div>
-                <div class="main_pref__text">всегда в курсе, всегда с Вами</div>
-            </div>
+        <div class="main_gets__r-side">
+            <img v-if="sizes.window >= 1023" src="./img/img7.png" alt="">
+            <picture><source srcset="./img/img6.webp" type="image/webp"><img v-if="sizes.window <= 1022" src="./img/img6.jpg" alt=""></picture>
         </div>
     </div>
 </div>
-            <div class="main_steps center_block">
-    <div class="main_steps__title">Этапы получения визы</div>
-    <div class="main_steps__blocks">
-        <div class="main_steps__block">
-            <div class="main_steps__number">1</div>
-            <div class="main_steps__info">
-                <div class="main_steps__tit">Оформление заявки</div>
-                <div class="main_steps__txt">Оставите, заявку на сайте  заполнив форму или свяжитесь с нами по телефону:</div>
-                <a href="tel:84951205777" class="main_steps__tel">8-495-120 57-77</a>
-                <button class="main_steps__btn">Оставить заявку</button>
+            <div class="main_doc center_block">
+    <div class="main_doc__in">
+        <div class="main_doc__title">Подача и получение докумкетов</div>
+        <div class="main_doc__text">
+            <p>Воспользуйтесь услугами «Visa-Holiday», чтобы избежать возможных осложнений в процессе получения визового разрешения, а также сэкономить время, которое можно уделить решению других насущных вопросов.</p>
+            <ul>
+                <li>Подача документов производится в порядке живой очереди, предварительной записи не требуется</li>
+                <li>Инвалиды и заявители с грудными детьми обслуживаются вне очереди</li>
+                <li>Обычное время оформления пакета документов занимает 5-7 минут.</li>
+                <li>Информация по готовности визы, счета на безналичную оплату и другие уведомления приходят на электронную почту заявителя</li>
+                <li>При необходимости можно включить sms информирование</li>
+            </ul>
+        </div>
+        <div class="main_doc__blocks">
+            <div class="main_doc__block">
+                <div class="main_doc__txt">Сроки <br>оформления визы <br>в Китай в 2024 г</div>
+                <div class="main_doc__number"><span>до</span> 4 <span>дней</span></div>
+            </div>
+            <div class="main_doc__block">
+                <div class="main_doc__txt">Процент <br>одобряемости визы <br>в Китай*</div>
+                <div class="main_doc__number">99,8%</div>
             </div>
         </div>
-        <div class="main_steps__block">
-            <div class="main_steps__number">2</div>
-            <div class="main_steps__info">
-                <div class="main_steps__tit">Заключение договора</div>
-                <div class="main_steps__txt">Заключаем официальный договор онлайн или при встрече</div>
-            </div>
-        </div>
-        <div class="main_steps__block">
-            <div class="main_steps__number">3</div>
-            <div class="main_steps__info">
-                <div class="main_steps__tit">Подготовка и подача документов</div>
-                <div class="main_steps__txt">Проверяем собранный пакет документов Без личного присутствия сдаем в Консульство*</div>
-                <div class="main_steps__small">*за исключением нескольких стран</div>
-            </div>
-        </div>
-        <div class="main_steps__block">
-            <div class="main_steps__number">4</div>
-            <div class="main_steps__info">
-                <div class="main_steps__tit">Получение визы</div>
-                <div class="main_steps__txt">Вы получаете готовую визу! Можете  отправляться в поездку</div>
-            </div>
-        </div>
-    </div>
-    <div class="main_steps__text">Или - <a href="#">написать нам в Whatsapp</a>, немного выслушать, чем мы будем заниматься, подписать договор, предоставить документы по списку, расслабиться и ждать, пока мы все подготовим. А после искренне радоваться полученной визе.</div>
-</div>
-            <div class="main_form center_block">
-    <div class="main_form__block">
-        <div class="main_form__l-side">
-            <picture><source srcset="./img/img2.webp" type="image/webp"><img src="./img/img2.jpg" alt=""></picture>
-        </div>
-        <div class="main_form__r-side">
-            <div class="main_form__subtitle">Рейтинг Яндекса 5,0</div>
-            <div class="main_form__title">Рассчитать стоимость оформления визы </div>
-            <div class="main_form__form">
-                <form action="">
-                    <input type="text" placeholder="Имя">
-                    <input type="tel" placeholder="Телефон">
-                    <div class="main_form__item">
-                        <input type="submit" value="Узнать стоимость">
-                        <div>Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных.</div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-            <div class="main_rev center_block">
-    <div class="main_rev__title">Отзывы о компании Visa-Holiday</div>
-    <div class="main_rev__blocks js-rev-slider">
-        <div class="main_rev__block">
-            <picture><source srcset="./img/r1.webp" type="image/webp"><img src="./img/r1.jpg" alt=""></picture>
-        </div>
-        <div class="main_rev__block">
-            <picture><source srcset="./img/r2.webp" type="image/webp"><img src="./img/r2.jpg" alt=""></picture>
-        </div>
-        <div class="main_rev__block">
-            <picture><source srcset="./img/r3.webp" type="image/webp"><img src="./img/r3.jpg" alt=""></picture>
-        </div>
-        <div class="main_rev__block">
-            <picture><source srcset="./img/r4.webp" type="image/webp"><img src="./img/r4.jpg" alt=""></picture>
-        </div>
-        <div class="main_rev__block">
-            <picture><source srcset="./img/r2.webp" type="image/webp"><img src="./img/r2.jpg" alt=""></picture>
-        </div>
+        <div class="main_doc__info">*Статистический анализ произведен за последние 3 года работы компании «Visa-Holiday»</div>
     </div>
 </div>
             <div class="main_get center_block">
@@ -344,6 +226,186 @@
         </div>
     </div>
 </div>
+            <div class="main_action center_block">
+    <div class="main_action__title">Аккредитация в консульстве - ежедневные подачи!</div>
+    <div class="main_action__text">Беремся за самые сложные задачи, даже если шансов мало, спортивный интерес помогает развиваться всей команде!) Мыслим шире и находим пути! При этом ведем диалог с Вами максимально прозрачно, не раздувая цены.</div>
+    <div class="main_action__blocks">
+        <div class="main_action__l-side">
+            <div class="main_action__block">
+                <div class="main_action__number">89,1%</div>
+                <div class="main_action__txt">путешественников возвращаются к нам за повторной услугой</div>
+            </div>
+            <div class="main_action__block">
+                <div class="main_action__number">60%</div>
+                <div class="main_action__txt">рекомендуют друзьям и близким</div>
+            </div>
+        </div>
+        <div class="main_action__r-side">
+            <div class="main_action__r-side--blocks">
+                <div class="main_action__lside">
+                    <div class="main_action__lside--title">С Вами мы тоже рады познакомиться!</div>
+                    <div class="main_action__lside--text">Дарим скидку 10% на первое обращение или бесплатный выезд курьера в пределах МКАД</div>
+                </div>
+                <div class="main_action__rside">
+                    <div class="main_action__rside--act">10%<span>СКИДКА</span></div>
+                </div>
+            </div>
+            <div class="main_action__bottom">
+                <div class="main_action__bottom--numb">89,1</div>
+                <div class="main_action__bottom--txt">Используйте промокод при обращении в Visa-holiday!</div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="main_red center_block">
+    <div class="main_red__in">
+        <div class="main_red__title">Виза- сложно? Можно выдохнуть. <br>Вы нашли надежную команду профессионалов</div>
+        <div class="main_red__text">
+            <p>1.  Основа нашей работы - прозрачная деятельность. После изучения Вашего пакета документов, мы максимально точно освещаем Вам процент успеха получения визы и делаем все возможное для ее одобрения.</p>
+            <p>2.  После подписания договора Вам не придется дозваниваться в колл-центры визового центра, добиваться информации и объяснять одно и тоже. Ваш личный консультант из Visa-Holiday всегда на связи и мотивирован в максимально скорые сроки Вам помочь!</p>
+            <p>3.  Беремся за отказы! Ведь мы знаем столько нюансов и обходных путей.</p>
+        </div>
+    </div>
+</div>
+            <div class="main_form center_block">
+    <div class="main_form__block">
+        <div class="main_form__l-side">
+            <picture><source srcset="./img/img2.webp" type="image/webp"><img src="./img/img2.jpg" alt=""></picture>
+        </div>
+        <div class="main_form__r-side">
+            <div class="main_form__subtitle">Рейтинг Яндекса 5,0</div>
+            <div class="main_form__title">Рассчитать стоимость оформления визы </div>
+            <div class="main_form__form">
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <div class="main_form__item">
+                        <input type="submit" value="Узнать стоимость">
+                        <div>Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных.</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="main_rev center_block">
+    <div class="main_rev__title">Отзывы о компании Visa-Holiday</div>
+    <div class="main_rev__blocks js-rev-slider">
+        <div class="main_rev__block">
+            <picture><source srcset="./img/r1.webp" type="image/webp"><img src="./img/r1.jpg" alt=""></picture>
+        </div>
+        <div class="main_rev__block">
+            <picture><source srcset="./img/r2.webp" type="image/webp"><img src="./img/r2.jpg" alt=""></picture>
+        </div>
+        <div class="main_rev__block">
+            <picture><source srcset="./img/r3.webp" type="image/webp"><img src="./img/r3.jpg" alt=""></picture>
+        </div>
+        <div class="main_rev__block">
+            <picture><source srcset="./img/r4.webp" type="image/webp"><img src="./img/r4.jpg" alt=""></picture>
+        </div>
+        <div class="main_rev__block">
+            <picture><source srcset="./img/r2.webp" type="image/webp"><img src="./img/r2.jpg" alt=""></picture>
+        </div>
+    </div>
+</div>
+            <div class="main_pr center_block">
+    <div class="main_pr__in">
+        <div class="main_pr__title">Почему стоит обратиться к нам</div>
+        <div class="main_pr__blocks">
+            <div class="main_pr__block">
+                <div class="main_pr__img">
+                    <img src="./img/q1.svg" alt="">
+                </div>
+                <div class="main_pr__text">Опыт работы <br>в визовой сфере больше 5 лет</div>
+            </div>
+            <div class="main_pr__block">
+                <div class="main_pr__img">
+                    <img src="./img/q2.svg" alt="">
+                </div>
+                <div class="main_pr__text">Более 2000 <br>довольных клиентов</div>
+            </div>
+            <div class="main_pr__block">
+                <div class="main_pr__img">
+                    <img src="./img/q3.svg" alt="">
+                </div>
+                <div class="main_pr__text">Честная оценка получения визы до заключения договора</div>
+            </div>
+            <div class="main_pr__block">
+                <div class="main_pr__img">
+                    <img src="./img/q4.svg" alt="">
+                </div>
+                <div class="main_pr__text">Высокий процент одобряемости 98%</div>
+            </div>
+            <div class="main_pr__block">
+                <div class="main_pr__img">
+                    <img src="./img/q5.svg" alt="">
+                </div>
+                <div class="main_pr__text">Виза под ключ <br>с выездом на дом</div>
+            </div>
+            <div class="main_pr__block">
+                <div class="main_pr__img">
+                    <img src="./img/q6.svg" alt="">
+                </div>
+                <div class="main_pr__text">Гарантия <br>на туристический пакет</div>
+            </div>
+            <div class="main_pr__block">
+                <div class="main_pr__img">
+                    <img src="./img/q7.svg" alt="">
+                </div>
+                <div class="main_pr__text">Подготовка <br>документов за 40 минут</div>
+            </div>
+            <div class="main_pr__block">
+                <div class="main_pr__img">
+                    <img src="./img/q8.svg" alt="">
+                </div>
+                <div class="main_pr__text">Консультация <br>о пересечении границ <br>в подарок</div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="main_flags center_block">
+    <div class="main_flags__blockss">
+        <div class="main_flags__blockss--title">Шенгенская виза</div>
+        <div class="main_flags__blockss--items">
+            <a href="#" class="main_flags__blockss--item">
+                <div class="main_flags__blockss--img">
+                    <img src="./img/f1.svg" alt="">
+                </div>
+                <div class="main_flags__blockss--tit">Германия</div>
+            </a>
+            <a href="#" class="main_flags__blockss--item">
+                <div class="main_flags__blockss--img">
+                    <img src="./img/f1.svg" alt="">
+                </div>
+                <div class="main_flags__blockss--tit">Германия</div>
+            </a>
+            <a href="#" class="main_flags__blockss--item">
+                <div class="main_flags__blockss--img">
+                    <img src="./img/f1.svg" alt="">
+                </div>
+                <div class="main_flags__blockss--tit">Германия</div>
+            </a>
+            <a href="#" class="main_flags__blockss--item">
+                <div class="main_flags__blockss--img">
+                    <img src="./img/f1.svg" alt="">
+                </div>
+                <div class="main_flags__blockss--tit">Германия</div>
+            </a>
+            <a href="#" class="main_flags__blockss--item">
+                <div class="main_flags__blockss--img">
+                    <img src="./img/f1.svg" alt="">
+                </div>
+                <div class="main_flags__blockss--tit">Германия</div>
+            </a>
+            <a href="#" class="main_flags__blockss--item">
+                <div class="main_flags__blockss--img">
+                    <img src="./img/f1.svg" alt="">
+                </div>
+                <div class="main_flags__blockss--tit">Германия</div>
+            </a>
+        </div>
+    </div>
+</div>
             <div class="main_question center_block">
     <div class="main_question__block">
         <div class="main_question__l-side">
@@ -362,26 +424,6 @@
         </div>
         <div class="main_question__r-side">
             <picture><source srcset="./img/img1.webp" type="image/webp"><img src="./img/img1.jpg" alt=""></picture>
-        </div>
-    </div>
-</div>
-            <div class="map_block center_block">
-    <div class="map_block__in">
-        <div class="map_block__map">
-            <div class="mapBlock" id="map" style="height: 100%;"></div>
-        </div>
-        <div class="map_block__contacts">
-            <div class="map_block__title">Контакты</div>
-            <div class="map_block__metro">Белорусская</div>
-            <div class="map_block__adr">Москва, 3-я улица Ямского поля, 18</div>
-            <div class="map_block__tel">
-                <span>Телефон:</span>
-                <a href="tel:84951205777">8-495-120 57-77</a>
-            </div>
-            <div class="map_block__work">
-                <span>Время работы:</span>
-                <div>10:00 - 19:00 <span>ПН - ПТ, СБ - ВС - выходной</span></div>
-            </div>
         </div>
     </div>
 </div>
@@ -502,6 +544,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20240616160427"></script>
+    <script src="js/app.min.js?_v=20240621090515"></script>
 </body>
 </html>

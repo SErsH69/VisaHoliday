@@ -1,0 +1,37 @@
+<div class="main_fr center_block">
+    <div class="main_fr__blocks">
+        <div class="main_fr__l-side">
+            <div class="main_fr__form">
+                <div class="main_fr__form--title">Виза в Китай</div>
+                <div class="main_fr__form--text">Получите консультацию по требуемым документам и стоимости</div>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <div class="main_fr__form--item">
+                        <input type="submit" value="Оставить заявку">
+                        <div>Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных.</div>
+                    </div>
+                </form>
+            </div>
+            <div class="main_fr__txt" v-if="sizes.window >= 1023">Хотите получить визу в Китай? С удовольствием избавим вас от лишних забот и трудностей! А если возникнут вопросы после получения визы, мы на связи и всегда готовы помочь. Вы не в России? Так даже интереснее.</div>
+        </div>
+        <div class="main_fr__r-side">
+            <div class="main_fr__img--img" v-if="sizes.window <= 1023">
+                <img src="./img/img8.jpg" alt="">
+            </div>
+            <div class="main_fr__img--info">
+                <div class="main_fr__img" v-if="sizes.window >= 1023">
+                    <div class="main_fr__img--img">
+                        <img src="./img/img8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="main_fr__txt" v-if="sizes.window <= 1023">Хотите получить визу в Китай? С удовольствием избавим вас от лишних забот и трудностей! А если возникнут вопросы после получения визы, мы на связи и всегда готовы помочь. Вы не в России? Так даже интереснее.</div>
+                <div class="main_fr__contact">
+                    <div class="main_fr__contact--title">Свяжитесь со специалистом</div>
+                    <a href="tel:84951205777" class="main_fr__contact--tel">8-495-120 57-77</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="main_fr__contact--wts">Напишите в Wathsapp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

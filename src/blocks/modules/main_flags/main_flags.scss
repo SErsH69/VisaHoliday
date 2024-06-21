@@ -1,67 +1,13 @@
-.block_country {
+.main_flags {
+    padding-top: vw(52);
     padding-bottom: vw(40);
     @media all and (max-width: 1024px) {
-        padding-bottom: 40px;
+        padding-top: 40px;
+        padding-bottom: 28px;
     }
     @media all and (max-width: 767px) {
-        padding-bottom: 32px;
-    }
-    &__title {
-        margin: 0;
-        margin-bottom: vw(44);
-        font-family: var(--second-family);
-        font-weight: 500;
-        font-size: vw(56);
-        line-height: 108%;
-        color: var(--text-hedline-dark);
-        @media all and (max-width: 1024px) {
-            margin-bottom: 40px;
-            font-size: 48px;
-        }
-        @media all and (max-width: 767px) {
-            margin-bottom: 32px;
-            font-size: 40px;
-        }
-    }
-    &__items {
-        margin-bottom: vw(80);
-        overflow: auto;
-        @media all and (max-width: 1024px) {
-            margin-bottom: 40px;
-        }
-        @media all and (max-width: 767px) {
-            margin-bottom: 32px;
-            margin-right: -20px;
-            width: calc(100% + 20px);
-        }
-        &--scroll {
-            width: 100%;
-            display: flex;
-        }
-        &--item {
-            margin-right: vw(12);
-            border-radius: vw(360);
-            padding: vw(11) vw(24);
-            font-weight: 500;
-            font-size: vw(18);
-            line-height: 144%;
-            text-align: center;
-            display: inline-block;
-            text-decoration: none;
-            color: #323232;
-            background: #fff;
-            white-space: nowrap;
-            @media all and (max-width: 1024px) {
-                font-size: 16px;
-                padding: 8px 16px;
-                border-radius: 360px;
-                margin-right: 4px;
-            }
-            &:hover {
-                background: #008347;
-                color: #fff;
-            }
-        }
+        padding-top: 32px;
+        padding-bottom: 24px;
     }
     &__blockss {
         &:not(:last-child) {
