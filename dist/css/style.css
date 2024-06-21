@@ -1859,9 +1859,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @font-face {
-  font-family: "Akrobatblack";
+  font-family: "Akrobat";
   font-display: swap;
-  src: url("../fonts/Akrobatblack.woff2") format("woff2"), url("../fonts/Akrobatblack.woff") format("woff"), url("../fonts/Akrobatblack.ttf") format("ttf");
+  src: url("../fonts/Akrobat.woff2") format("woff2"), url("../fonts/Akrobat.woff") format("woff"), url("../fonts/Akrobat.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -1873,23 +1873,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @font-face {
-  font-family: "Akrobatextralight";
+  font-family: "Akrobatextrabold";
   font-display: swap;
-  src: url("../fonts/Akrobatextralight.woff2") format("woff2"), url("../fonts/Akrobatextralight.woff") format("woff"), url("../fonts/Akrobatextralight.ttf") format("ttf");
+  src: url("../fonts/Akrobatextrabold.woff2") format("woff2"), url("../fonts/Akrobatextrabold.woff") format("woff"), url("../fonts/Akrobatextrabold.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Akrobatlight";
+  font-family: "Akrobatblack";
   font-display: swap;
-  src: url("../fonts/Akrobatlight.woff2") format("woff2"), url("../fonts/Akrobatlight.woff") format("woff"), url("../fonts/Akrobatlight.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Akrobatsemibold";
-  font-display: swap;
-  src: url("../fonts/Akrobatsemibold.woff2") format("woff2"), url("../fonts/Akrobatsemibold.woff") format("woff"), url("../fonts/Akrobatsemibold.ttf") format("ttf");
+  src: url("../fonts/Akrobatblack.woff2") format("woff2"), url("../fonts/Akrobatblack.woff") format("woff"), url("../fonts/Akrobatblack.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -1908,16 +1901,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @font-face {
-  font-family: "Akrobatextrabold";
+  font-family: "Akrobatsemibold";
   font-display: swap;
-  src: url("../fonts/Akrobatextrabold.woff2") format("woff2"), url("../fonts/Akrobatextrabold.woff") format("woff"), url("../fonts/Akrobatextrabold.ttf") format("ttf");
+  src: url("../fonts/Akrobatsemibold.woff2") format("woff2"), url("../fonts/Akrobatsemibold.woff") format("woff"), url("../fonts/Akrobatsemibold.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Akrobat";
+  font-family: "Akrobatextralight";
   font-display: swap;
-  src: url("../fonts/Akrobat.woff2") format("woff2"), url("../fonts/Akrobat.woff") format("woff"), url("../fonts/Akrobat.ttf") format("ttf");
+  src: url("../fonts/Akrobatextralight.woff2") format("woff2"), url("../fonts/Akrobatextralight.woff") format("woff"), url("../fonts/Akrobatextralight.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Akrobatlight";
+  font-display: swap;
+  src: url("../fonts/Akrobatlight.woff2") format("woff2"), url("../fonts/Akrobatlight.woff") format("woff"), url("../fonts/Akrobatlight.ttf") format("ttf");
   font-weight: 400;
 }
 
