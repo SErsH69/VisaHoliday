@@ -8,8 +8,8 @@
     <title>Услуги</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap&_v=20240621144349" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20240621144349">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap&_v=20240621151443" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20240621151443">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=8a69628d-9012-482b-962d-9bd92d6f2d51&lang=ru_RU&_v=20220914090452" type="text/javascript"></script>
 </head>
 <body>
@@ -36,7 +36,7 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <button class="header__button" v-if="sizes.window >= 1023">Бесплатная консультация</button>
+            <button class="header__button" data-modal-id="1" v-if="sizes.window >= 1023">Бесплатная консультация</button>
             <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}" v-if="sizes.window <= 1023">
                 <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
                 <div class="header__burger--body">
@@ -61,7 +61,7 @@
                         <div class="header__adr">г. Москва, 3-я улица Ямского поля, 18</div>
                         <a href="tel:84951205777" class="header__tel">8-495-120 57-77</a>
                         <a href="#" target="_blank" class="header__wts" rel="noopener noreferrer">Напишите в Whatsapp</a>
-                        <button class="header__button">Бесплатная консультация</button>
+                        <button class="header__button" data-modal-id="1">Бесплатная консультация</button>
                     </div>
                 </div>
             </div>
@@ -367,78 +367,19 @@
         <div class="modal" data-modal="1">
     <div class="modal__in">
         <div class="modal__closer"></div>
-        <div class="modal__title">Авторизация</div>
-        <div class="modal__text">На указанный номер, будет направлен смс-код для подтверждения</div>
-        <form action="/login" method="POST" class="modal__form">
-            <div class="modal__form--input">
-                <input type="tel" id="tel" name="phone" placeholder="Телефон" required>
-                <label for="tel">Телефон</label>
-            </div>
-            <div class="modal__form--submit">
-                <input id="sb2" type="submit" value="Войти">
-                <label for="sb2"></label>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="modal modal_sends" data-modal="2">
-    <div class="modal__in">
-        <div class="modal__closer"></div>
-        <div class="modal__title">Отписаться от рассылки</div>
-        <div class="modal__text">Для того чтобы отписаться от рассылки <br>введите номер телефона</div>
-        <form action="/unsubcribe" method="POST" class="modal__form">
-            <div class="modal__form--input">
-                <input type="tel" id="tel2" name="phone" placeholder="Телефон" required>
-                <label for="tel2">Телефон</label>
-            </div>
-            <div class="modal__form--submit">
-                <input id="sb1" type="submit" value="Отписаться">
-                <label for="sb1"></label>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="modal modal_check" data-modal="3">
-    <div class="modal__in">
-        <div class="modal__closer"></div>
-        <div class="modal__title">Заполните форму</div>
-        <form action="/newform" class="modal__form" method="POST">
-            <div class="modal__form--input">
-                <input type="text" id="name1" name="fio" placeholder="Ф.И.О" required>
-                <label for="name1">Ф.И.О</label>
-            </div>
-            <div class="modal__form--input">
-                <input type="text" id="date1" name="birthday" placeholder="Дата рождения" required>
-                <label for="date1">Дата рождения</label>
-            </div>
-            <div class="modal__form--input">
-                <input type="text" id="adr1" name="address" placeholder="Адрес проживания" required>
-                <label for="adr1">Адрес проживания</label>
-            </div>
-            <div class="modal__form--input">
-                <input type="email" id="email1" name="email" placeholder="Почта" required>
-                <label for="email1">Почта</label>
-            </div>
-            <div class="modal__form--input">
-                <input type="tel" id="tel3" name="phone" placeholder="Телефон" required>
-                <label for="tel3">Телефон</label>
-            </div>
-            <label class="modal__form--custom-checkbox">
-                <input type="checkbox" name="checkbox1" value="checked">
-                <span><span>Я даю свое <a href="#" target="_blank"> Согласие на обработку персональных данных</a></span></span>
-            </label>
-            <label class="modal__form--custom-checkbox">
-                <input type="checkbox" name="checkbox2" value="checked">
-                <span><span>Я даю свое Предварительное <br> <a href="#" target="_blank"> согласие на получение рекламных материалов</a></span></span>
-            </label>
-            <div class="modal__form--submit">
-                <input id="sb3" type="submit" value="Получить деньги">
-                <label for="sb3"></label>
+        <div class="modal__title">Выезд под ключ по Москве</div>
+        <div class="modal__text">Заполните форму и мы свяжемся с вами в ближайшее время.</div>
+        <form action="">
+            <input type="text" placeholder="Имя">
+            <input type="tel" placeholder="Телефон">
+            <div class="modal__item">
+                <input type="submit" value="Заказать выезд специалиста">
+                <div>Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных.</div>
             </div>
         </form>
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20240621144349"></script>
+    <script src="js/app.min.js?_v=20240621151443"></script>
 </body>
 </html>

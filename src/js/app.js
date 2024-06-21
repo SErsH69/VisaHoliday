@@ -41,6 +41,7 @@ window.app = new Vue({
         this.mainRev.init();
         this.mapBlock.init();
         this.blogBlock.init();
+        this.modals.init();
     },
     computed: {
         isMobile: function () {

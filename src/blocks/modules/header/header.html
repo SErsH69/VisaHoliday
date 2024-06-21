@@ -20,7 +20,7 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <button class="header__button" v-if="sizes.window >= 1023">Бесплатная консультация</button>
+            <button class="header__button" data-modal-id="1" v-if="sizes.window >= 1023">Бесплатная консультация</button>
             <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}" v-if="sizes.window <= 1023">
                 <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
                 <div class="header__burger--body">
@@ -45,7 +45,7 @@
                         <div class="header__adr">г. Москва, 3-я улица Ямского поля, 18</div>
                         <a href="tel:84951205777" class="header__tel">8-495-120 57-77</a>
                         <a href="#" target="_blank" class="header__wts" rel="noopener noreferrer">Напишите в Whatsapp</a>
-                        <button class="header__button">Бесплатная консультация</button>
+                        <button class="header__button" data-modal-id="1">Бесплатная консультация</button>
                     </div>
                 </div>
             </div>
