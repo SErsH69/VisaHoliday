@@ -6,6 +6,19 @@
     @media all and (max-width: 767px) {
         padding-bottom: 32px;
     }
+    &__blocks {
+        display: flex;
+        &--l-side {
+            width: 100%;
+        }
+        &--r-side {
+            flex: 0 0 vw(392);
+            margin-left: vw(24);
+            @media all and (max-width: 1024px) {
+                display: none;
+            }
+        }
+    }
     &__title {
         margin: 0;
         margin-bottom: vw(44);

@@ -1,0 +1,95 @@
+.main_reds {
+    padding-top: vw(52);
+    padding-bottom: vw(52);
+    @media all and (max-width: 1024px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media all and (max-width: 767px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    &__in {
+        border-radius: vw(24);
+        padding: vw(48);
+        background: #fff;
+        @media all and (max-width: 1024px) {
+            border-radius: 24px;
+            padding: 40px;
+        }
+        @media all and (max-width: 767px) {
+            border-radius: 20px;
+            padding: 32px 24px;
+        }
+    }
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: vw(48);
+        line-height: 108%;
+        color: var(--text-hedline-dark);
+        margin-bottom: vw(40);
+        @media all and (max-width: 1024px) {
+            font-size: 40px;
+            margin-bottom: 32px;
+        }
+        @media all and (max-width: 767px) {
+            font-size: 32px;
+            margin-bottom: 28px;
+        }
+    }
+    &__text {
+        margin-bottom: vw(32);
+        font-weight: 400;
+        font-size: vw(18);
+        line-height: 156%;
+        color: var(--text-body-dark);
+        @media all and (max-width: 1024px) {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        @media all and (max-width: 767px) {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            columns: 2;
+            @media all and (max-width: 1024px) {
+                columns: 1;
+            }
+            li {
+                padding-left: vw(32);
+                position: relative;
+                @media all and (max-width: 1024px) {
+                    padding-left: 26px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background: #008347;
+                    width: vw(8);
+                    height: vw(8);
+                    border-radius: 50%;
+                    top: 50%;
+                    margin-top: vw(-4);
+                    left: vw(8);
+                    @media all and (max-width: 1024px) {
+                        width: 8px;
+                        height: 8px;
+                        margin-top: -4px;
+                        left: 8px;
+                    }
+                }
+                &:not(:last-child) {
+                    margin-bottom: vw(16);
+                    @media all and (max-width: 1024px) {
+                        
+                    }
+                }
+            }
+        }
+    }
+}

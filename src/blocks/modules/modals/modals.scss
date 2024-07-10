@@ -78,6 +78,27 @@
             margin-bottom: 12px;
         }
     }
+    select {
+        border: 0;
+        width: 100%;
+        appearance: none;
+        margin-bottom: vw(24);
+        display: block;
+        border-radius: vw(16);
+        border-radius: vw(360);
+        padding: vw(12) vw(24);
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 9L12 16L19 9' stroke='%23323232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: 98% 50%;
+        background-size: size(24);
+        @media all and (max-width: 1024px) {
+            margin-bottom: 24px;
+            border-radius: 360px;
+            background-size: 24px;
+            padding: 12px 24px;
+        }
+    }
     input {
         &[type="text"], &[type="tel"] {
             width: 100%;
